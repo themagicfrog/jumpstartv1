@@ -11,6 +11,7 @@
 <body>
   <header>
     <h1>GODOT PLATFORMER GUIDE IN 10 STEPS</h1>
+    <img src="assets/startdemo.gif">
   </header>
   <section id="info">
     <h2>1. Download Godot and Create Your Project</h2>
@@ -47,6 +48,24 @@
     <img src="assets/templateexplanation.png">
     <h2>10. Make an Input Map</h2>
     <p>In the template code, keys are with ui_accept, left, and right. These are not very adjustable, so using input map is a good idea. Go to Project in the top bar, Project Settings, Input Map, </p>
+    <img src="assets/inputmap.gif">
+    <p>Now, replace the ui controls in the code with the new input map. For example, replace ui_accept with jump. Then, replace the left and right with the new input map.</p>
+    <img src="assets/codeinputmap.gif">
+    <h2>11. Tweak Movements in Code</h2>
+    <p>The current code works, but you can make lots of changes to make it better. For exmaple, on line 19 where the slowing down of the player is controlled, it is very sudden. You can change the last value (which says SPEED) with other numbers to make the player slide more.</p>
+    <img src="assets/movementchanges.gif">
+    <p>Also, in Project, Project Settings, General, and 2D Gravity, you can adjust the gravity to be higher. Finally, you can adjust the SPEED and JUMP_VELOCITY to however you want. Remember, the lower jump velocity, the higher the jump. Press ctrl+b or use the play button in the top right to run your game and see the changes.</p>
+    
+    <div style="display: flex; justify-content: space-between; margin: 20px 0;">
+      <div style="flex: 1; text-align: center; margin-right: 10px;">
+        <h3>Before Movement Changes</h3>
+        <img src="assets/beforemovechanges.gif" style="max-width: 100%; height: auto;"/>
+      </div>
+      <div style="flex: 1; text-align: center; margin-left: 10px;">
+        <h3>After Movement Changes</h3>
+        <img src="assets/aftermovechanges.gif" style="max-width: 100%; height: auto;"/>
+      </div>
+    </div>
     <h2>11. Run the code</h2>
     <p>Click ctrl+b or use the play button in the top right to start the program. Set the default scene to main. Congrats!! You now have a platformer game!</p>
     <img src="assets/runprogram.gif">

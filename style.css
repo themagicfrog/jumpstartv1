@@ -16,7 +16,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 header h1 {
@@ -59,8 +58,8 @@ header h2 {
 
 #info {
   text-align: left;
-  padding: 1em 2em;
-  background-color: #1b388c;
+  padding: 1em 4em;
+  background-color: #100a52;
   color: white;
   font-size: 27px;
 }
@@ -208,27 +207,4 @@ button:hover {
 
 header button {
   margin-top: 1.5em;
-}
-
-.scroll-arrow {
-  position: absolute;
-  left: 50%;
-  bottom: 32px;
-  transform: translateX(-50%);
-  cursor: pointer;
-  z-index: 10;
-  background: none;
-  border: none;
-  outline: none;
-  animation: arrow-bounce 1.5s infinite;
-  transition: filter 0.2s;
-}
-
-.scroll-arrow:focus, .scroll-arrow:hover {
-  filter: brightness(1.5) drop-shadow(0 0 10px #fff);
-}
-
-@keyframes arrow-bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(12px); }
 }
