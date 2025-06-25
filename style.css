@@ -258,3 +258,18 @@ header button {
   height: auto;
 }
 
+.rounded-image {
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded-glow {
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 40px 10px rgba(255,255,255,0.7), 0 0 80px 20px rgba(234,67,134,0.4);
+}
+

@@ -12,6 +12,11 @@
   <header>
     <h1>GODOT PLATFORMER GUIDE IN 10 STEPS</h1>
     <img src="assets/startdemo.gif">
+    <div class="scroll-arrow" onclick="scrollToInfo()" tabindex="0" aria-label="Scroll down" role="button">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 20L24 32L36 20" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
   </header>
   <section id="info">
     <h2>1. Download Godot and Create Your Project</h2>
@@ -79,5 +84,13 @@
   </section>
 
   <script src="script.js"></script>
+  <script>
+    function scrollToInfo() {
+      const infoSection = document.getElementById('info');
+      if (infoSection) {
+        infoSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
 </body>
 </html> 
