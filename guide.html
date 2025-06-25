@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JUMPSTART </title>
+  <title>JUMPSTART GUIDE</title>
+  <link rel="icon" type="image/png" href="assets/j-favicon.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,10 +10,10 @@
 </head>
 <body>
   <header>
-    <h1>GODOT PLATFORMER GUIDE</h1>
+    <h1>GODOT PLATFORMER GUIDE IN 10 STEPS</h1>
   </header>
   <section id="info">
-    <h2>1. Downloading Godot and Creating Your Project</h2>
+    <h2>1. Download Godot and Create Your Project</h2>
     <p>Godot is a free, open source game engine that you will be using to make your game. It is very easy to learn as a beginner! First, go to <a href="https://godotengine.org/" target="_blank">godotengine.org</a> and download it on your computer.</p>
     <img src="assets/godotdownload.gif"/>
     <p>Click the Create New Project Button, and name your platformer. Then create a new folder that will have all your future Godot games. Use the Mobile renderer. Finally, click Create at the bottom.</p>
@@ -29,20 +30,30 @@
     <h2>4. Create a Collision Box</h2>
     <p>Add a CollisionShape2D to the Player. Then select Rectangle for the shape in the Inspector on the right. Resize the blue box to cover the player. This will help with the physics when the player is jumping and walking around. </p>
     <img src="assets/createcollisionbox.gif">
-    <h2>5. Creating a Tileset</h2>
+    <h2>5. Create a Tileset</h2>
     <p>Tilemaps are used to easily make grid-based 2D maps. Add a TileMapLayer node under Player. Go to the Inspector and select New Tilset in the Tile Set option. Then on the bottom bar, navigate to TileSet. Import a image to the FileSystem, then drag it into TileSet. Select Yes to modifications.</p>
     <img src="assets/createtilemap.gif">
-    <h2>6. Making Physics for the Tileset</h2>
+    <h2>6. Make Physics for the Tileset</h2>
     <p>Just like the player, each block of the map needs a collision box too. Open TileSet in the Inspector and under Physics Layers, Add Element. Then in the TileSet in the bottom area, change to Paint and select Physics Layer 0 as the Paint Property. Finally, select all of the squares.</p>
     <img src="assets/tilesetphysics.gif">
-    <h2>7. Drawing a Map</h2>
+    <h2>7. Draw a Map</h2>
     <p>In TileMap, use the pencil tool and select one cube. Then you can draw a map in the purple rectangle in the main view. You can also adjust the size in Transform and Scale.</p>
     <img src="assets/drawingmap.gif">
     <h2>8. Create a Player Script</h2>
     <p>To make it so the player can jump and walk around, you need to code a script for the player. Select the player, then click the scroll with a green plus above to create a script. Choose GDScript (the language Godot uses), check template and choose CharacterBody2D: Basic Movement, and then create the script.</p>
     <img src="assets/makeplayerscript.gif">
-    <h2>9. Code Player Movement</h2>
-    <p>There is a template with code</p>
+    <h2>9. Understand the Template Code</h2>
+    <p>Godot does come with a template for player movement, but there are many ways to make the movement and code better. First, you should understand the template code. Look at the photo below and read through why each of the lines of codes works!</p>
+    <img src="assets/templateexplanation.png">
+    <h2>10. Make an Input Map</h2>
+    <p>In the template code, keys are with ui_accept, left, and right. These are not very adjustable, so using input map is a good idea. Go to Project in the top bar, Project Settings, Input Map, </p>
+    <h2>11. Run the code</h2>
+    <p>Click ctrl+b or use the play button in the top right to start the program. Set the default scene to main. Congrats!! You now have a platformer game!</p>
+    <img src="assets/runprogram.gif">
+  </section>
+
+  <section id="end">
+    <button onclick="window.location.href='next.html'">WHAT'S NEXT</button>
   </section>
 
   <script src="script.js"></script>

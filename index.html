@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>JUMPSTART</title>
+  <link rel="icon" type="image/png" href="assets/j-favicon.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,11 +10,16 @@
 </head>
 <body>
   <header>
-    <h1>JUMPSTART</h1>
+    <img src="assets/jumpstart_title.gif" class="title-animation">
     <p>a Hack Club YSWS</p>
     <h2>Build a platformer in Godot in one week</h2>
     <h2>Earn stickers and other prizes</h2>
     <button onclick="window.location.href='guide.html'">GET STARTED</button>
+    <div class="scroll-arrow" onclick="scrollToInfo()" tabindex="0" aria-label="Scroll down" role="button">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 20L24 32L36 20" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
   </header>
   <section id="info">
     <h2>How Does This Work?</h2>
@@ -51,5 +57,13 @@
   </section>
 
   <script src="script.js"></script>
+  <script>
+  function scrollToInfo() {
+    const info = document.getElementById('info');
+    if (info) {
+      info.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  </script>
 </body>
 </html>
