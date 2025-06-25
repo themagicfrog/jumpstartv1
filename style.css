@@ -18,6 +18,17 @@ header {
   align-items: center;
 }
 
+body:has(header h1:only-child) header,
+header:has(h1:only-child) {
+  min-height: 60vh;
+  padding: 2em 0;
+}
+
+.short-header {
+  min-height: 60vh;
+  padding: 2em 0;
+}
+
 header h1 {
   font-size: 90px;
   margin: 0.4em 0;
@@ -266,10 +277,21 @@ header button {
 }
 
 .rounded-glow {
-  border-radius: 16px;
-  overflow: hidden;
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 0 40px 10px rgba(255,255,255,0.7), 0 0 80px 20px rgba(234,67,134,0.4);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
+}
+
+footer {
+  text-align: center;
+  background-color: #100a52;
+  color: white;
+  padding: 2em 0;
+  margin-top: 2em;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+  opacity: 0.9;
 }
 
