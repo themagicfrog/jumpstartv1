@@ -208,3 +208,42 @@ button:hover {
 header button {
   margin-top: 1.5em;
 }
+
+.gallery-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 2em;
+  padding: 1em 0;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.gallery-card {
+  flex: 0 0 300px;
+  background: #222c5c;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+  scroll-snap-align: start;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+}
+
+.gallery-card h3 {
+  margin: 0.5em 0 0.2em 0;
+  font-size: 1.3em;
+}
+
+.gallery-card p {
+  font-size: 1em;
+  color: #e0e0e0;
+}
