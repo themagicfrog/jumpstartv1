@@ -1,4 +1,6 @@
-# Jumpstart!
+# Jumpstart VERION 1
+
+### submissions have closed 
 
 # Create a platformer in Godot, earn stickers!!
 
